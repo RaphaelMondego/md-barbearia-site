@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Barbearia | Barbearia Premium em Santo Amaro - SP</title>
+  <meta name="description" content="MD Barbearia: cortes precisos, barba e acabamento impecável no Parque Novo Santo Amaro, São Paulo. Agende pelo WhatsApp (11) 95863-4523.">
+  <meta name="keywords" content="barbearia, barbearia Santo Amaro, barbearia São Paulo, corte masculino, barba, pigmentação, sobrancelha, selagem, MD Barbearia, Parque Novo Santo Amaro">
+  <meta name="author" content="MD Barbearia">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="canonical" href="https://raphaelmondego.github.io/md-barbearia-site/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="MD Barbearia — Onde o estilo começa.">
+  <meta property="og:description" content="Cortes precisos. Acabamento impecável. Santo Amaro — SP. Agende pelo WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200">
+  <meta property="og:url" content="https://raphaelmondego.github.io/md-barbearia-site/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0d'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23c9a84c'%3EMD%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "MD Barbearia",
+    "telephone": "+55 11 95863-4523",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Três Marias, 207",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "05874-180",
+      "addressCountry": "BR"
+    },
+    "openingHours": ["Mo-Sa 10:00-20:00", "Su 10:00-14:00"],
+    "priceRange": "R$15 - R$55+"
+  }
+  </script>
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo" aria-label="MD Barbearia - voltar ao início">
+        <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+        <span>MD <em>Barbearia</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#localizacao">Localização</a>
+        <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20MD%20Barbearia." class="btn btn-gold btn-sm nav-cta-mobile" target="_blank" rel="noopener">Agendar Agora</a>
+      </nav>
+
+      <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20MD%20Barbearia." class="btn btn-gold btn-sm nav-cta" target="_blank" rel="noopener" aria-label="Agendar agora pelo WhatsApp">Agendar Agora</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <canvas id="particles" class="hero-particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="eyebrow reveal">✦ Barbearia Premium · Desde o primeiro corte</span>
+          <h1 class="hero-title reveal">Onde o estilo <span class="gold-text">começa.</span></h1>
+          <p class="hero-sub reveal">Cortes precisos. Acabamento impecável. Santo Amaro — SP.</p>
+          <div class="hero-buttons reveal">
+            <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20MD%20Barbearia." class="btn btn-gold" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-icon"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+              Agendar pelo WhatsApp
+            </a>
+            <a href="#servicos" class="btn btn-outline" aria-label="Ver serviços e preços">Ver Serviços</a>
+          </div>
+          <ul class="hero-stats reveal" aria-label="Destaques">
+            <li><strong>8</strong><span>serviços</span></li>
+            <li><strong>R$35</strong><span>corte a partir de</span></li>
+            <li><strong>7</strong><span>dias por semana</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" id="scissorsWrap" aria-hidden="true">
+          <div class="scissors-shadow"></div>
+          <svg class="scissors" id="scissors" viewBox="0 0 600 600">
+            <defs>
+              <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset=".22" stop-color="#d9dde2"/>
+                <stop offset=".45" stop-color="#8b9199"/>
+                <stop offset=".55" stop-color="#f4f6f8"/>
+                <stop offset=".78" stop-color="#9aa0a8"/>
+                <stop offset="1" stop-color="#4b5058"/>
+              </linearGradient>
+              <linearGradient id="chromeH" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#5d636b"/>
+                <stop offset=".35" stop-color="#e9ecef"/>
+                <stop offset=".6" stop-color="#9ba1a9"/>
+                <stop offset="1" stop-color="#ffffff"/>
+              </linearGradient>
+              <linearGradient id="goldG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f7dc95"/>
+                <stop offset=".5" stop-color="#c9a84c"/>
+                <stop offset="1" stop-color="#7d6224"/>
+              </linearGradient>
+              <radialGradient id="screwG" cx=".35" cy=".35" r=".8">
+                <stop offset="0" stop-color="#fff6d8"/>
+                <stop offset=".45" stop-color="#e2bb6b"/>
+                <stop offset="1" stop-color="#6e5420"/>
+              </radialGradient>
+              <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                <stop offset=".5" stop-color="#fff" stop-opacity=".9"/>
+                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Lâmina inferior (espelhada) -->
+            <g id="bladeB" class="blade">
+              <g transform="translate(0 600) scale(1 -1)">
+                <path class="blade-steel" d="M286 300 L578 300 Q520 290 430 284 Q350 279 300 270 Q284 280 286 300 Z" fill="url(#chrome)"/>
+                <path d="M300 298 L570 299" stroke="#ffffff" stroke-width="1.5" opacity=".7"/>
+                <path d="M304 300 C262 306 232 322 200 344 L212 362 C244 342 270 328 310 318 Z" fill="url(#chromeH)"/>
+                <ellipse cx="150" cy="378" rx="58" ry="44" transform="rotate(-18 150 378)" fill="none" stroke="url(#goldG)" stroke-width="17"/>
+                <ellipse cx="150" cy="378" rx="58" ry="44" transform="rotate(-18 150 378)" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="2"/>
+                <path d="M196 352 L214 344 L224 364 L206 372 Z" fill="url(#goldG)"/>
+              </g>
+            </g>
+
+            <!-- Lâmina superior -->
+            <g id="bladeA" class="blade">
+              <path class="blade-steel" d="M286 300 L578 300 Q520 290 430 284 Q350 279 300 270 Q284 280 286 300 Z" fill="url(#chrome)"/>
+              <path d="M300 298 L570 299" stroke="#ffffff" stroke-width="1.5" opacity=".7"/>
+              <path id="bladeShine" d="M330 286 L520 293" stroke="url(#shine)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+              <path d="M304 300 C262 306 232 322 200 344 L212 362 C244 342 270 328 310 318 Z" fill="url(#chromeH)"/>
+              <ellipse cx="150" cy="378" rx="58" ry="44" transform="rotate(-18 150 378)" fill="none" stroke="url(#goldG)" stroke-width="17"/>
+              <ellipse cx="150" cy="378" rx="58" ry="44" transform="rotate(-18 150 378)" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="2"/>
+              <path d="M196 352 L214 344 L224 364 L206 372 Z" fill="url(#goldG)"/>
+            </g>
+
+            <!-- Parafuso central -->
+            <circle cx="300" cy="300" r="17" fill="url(#screwG)" stroke="#3a2c0d" stroke-width="2"/>
+            <circle cx="300" cy="300" r="7" fill="#1a1406" opacity=".55"/>
+            <path d="M293 300 L307 300" stroke="#fff3c9" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          </svg>
+          <p class="scissors-hint">mova o cursor ✂</p>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-down" aria-label="Rolar para a seção Sobre">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-label="Serviços oferecidos">
+      <div class="ticker-track">
+        <span>CORTE ✦ BARBA ✦ COMBO ✦ PIGMENTAÇÃO ✦ SELAGEM ✦ SOBRANCELHA ✦ HIDRATAÇÃO ✦ REFLEXO ✦&nbsp;</span>
+        <span aria-hidden="true">CORTE ✦ BARBA ✦ COMBO ✦ PIGMENTAÇÃO ✦ SELAGEM ✦ SOBRANCELHA ✦ HIDRATAÇÃO ✦ REFLEXO ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800" alt="Interior da MD Barbearia com cadeiras de barbeiro clássicas e iluminação quente" loading="lazy" width="800" height="1000">
+          <div class="about-badge">
+            <strong>100%</strong>
+            <span>foco no<br>seu estilo</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag reveal">Sobre nós</span>
+          <h2 class="section-title reveal">Mais que um corte.<br><span class="gold-text">Uma experiência.</span></h2>
+          <p class="reveal">A MD Barbearia nasceu no coração do Parque Novo Santo Amaro com uma missão simples: entregar ao homem moderno um atendimento de alto padrão, sem pressa e sem frescura. Aqui cada detalhe importa — da toalha quente ao último acerto na navalha.</p>
+          <p class="reveal">Nossos barbeiros dominam do clássico ao degradê mais atual, e trabalham apenas com produtos profissionais selecionados para cuidar do seu cabelo, da sua barba e da sua pele.</p>
+          <ul class="about-features">
+            <li class="reveal stagger">
+              <span class="feat-icon" aria-hidden="true">✦</span>
+              <div><strong>Ambiente premium</strong><p>Espaço climatizado, confortável e pensado para você relaxar.</p></div>
+            </li>
+            <li class="reveal stagger">
+              <span class="feat-icon" aria-hidden="true">✂</span>
+              <div><strong>Profissionais experientes</strong><p>Barbeiros atualizados nas técnicas e tendências do momento.</p></div>
+            </li>
+            <li class="reveal stagger">
+              <span class="feat-icon" aria-hidden="true">◆</span>
+              <div><strong>Produtos de qualidade</strong><p>Linha profissional para cabelo, barba e finalização.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">
+      <span></span>
+      <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+      <span></span>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag reveal">Serviços</span>
+          <h2 class="section-title reveal">Escolha o seu <span class="gold-text">próximo visual</span></h2>
+          <p class="section-lead reveal">Preços a partir de. Consulte valores dos tratamentos especiais pelo WhatsApp.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Corte de Cabelo</h3><span class="price"><small>a partir de</small> R$35</span></div>
+            <p>Máquina, tesoura, degradê ou social. Finalizado com produto e acabamento na navalha.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Barba</h3><span class="price"><small>a partir de</small> R$25</span></div>
+            <p>Desenho, toalha quente, navalha e hidratação para uma barba alinhada e macia.</p>
+          </article>
+          <article class="service-card featured reveal stagger">
+            <span class="tag-popular">Mais pedido</span>
+            <div class="service-top"><h3>Combo Corte + Barba</h3><span class="price"><small>a partir de</small> R$55</span></div>
+            <p>O pacote completo para sair renovado. Economia e o melhor dos dois mundos.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Sobrancelha</h3><span class="price"><small>a partir de</small> R$15</span></div>
+            <p>Limpeza e alinhamento discretos, mantendo a naturalidade do olhar masculino.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Pigmentação</h3><span class="price consult">consulte valores</span></div>
+            <p>Preenche falhas no cabelo e na barba, deixando o desenho mais denso e definido.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Hidratação Capilar</h3><span class="price consult">consulte valores</span></div>
+            <p>Tratamento que devolve brilho, maciez e saúde aos fios.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Selagem</h3><span class="price consult">consulte valores</span></div>
+            <p>Reduz o volume e o frizz, alinhando os fios com efeito duradouro.</p>
+          </article>
+          <article class="service-card reveal stagger">
+            <div class="service-top"><h3>Reflexo</h3><span class="price consult">consulte valores</span></div>
+            <p>Luzes e platinado para quem quer ousar com estilo e segurança.</p>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20valores%20dos%20servi%C3%A7os." class="btn btn-gold" target="_blank" rel="noopener" aria-label="Consultar valores pelo WhatsApp">Consultar valores no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag reveal">Galeria</span>
+          <h2 class="section-title reveal">Nosso <span class="gold-text">trabalho</span></h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item g-tall reveal stagger" aria-label="Ampliar foto: barbeiro finalizando corte">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800" alt="Barbeiro finalizando corte masculino com máquina" loading="lazy">
+          </button>
+          <button class="gallery-item reveal stagger" aria-label="Ampliar foto: corte masculino">
+            <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=800" alt="Corte masculino moderno com degradê bem marcado" loading="lazy">
+          </button>
+          <button class="gallery-item reveal stagger" aria-label="Ampliar foto: barba">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800" alt="Barba sendo aparada e desenhada com precisão" loading="lazy">
+          </button>
+          <button class="gallery-item g-wide reveal stagger" aria-label="Ampliar foto: ambiente da barbearia">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200" alt="Ambiente da barbearia com cadeiras e espelhos" loading="lazy">
+          </button>
+          <button class="gallery-item reveal stagger" aria-label="Ampliar foto: barba na tesoura">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=800" alt="Barbeiro aparando a barba de um cliente com tesoura" loading="lazy">
+          </button>
+          <button class="gallery-item reveal stagger" aria-label="Ampliar foto: cadeira de barbeiro">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800" alt="Cadeira de barbeiro clássica em couro marrom" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag reveal">Depoimentos</span>
+          <h2 class="section-title reveal">Quem senta, <span class="gold-text">volta</span></h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi-card reveal stagger">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Melhor degradê que já fiz. Atendimento pontual, ambiente top e o barbeiro realmente ouve o que você quer. Virei cliente fixo.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">J</span><div><strong>João M.</strong><small>Cliente há 1 ano</small></div></figcaption>
+          </figure>
+          <figure class="testi-card reveal stagger">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Fiz o combo corte + barba e saí outra pessoa. Toalha quente, navalha, acabamento perfeito. Vale cada centavo.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">R</span><div><strong>Rafael S.</strong><small>Cliente há 6 meses</small></div></figcaption>
+          </figure>
+          <figure class="testi-card reveal stagger">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Agendei pelo WhatsApp em dois minutos. Pigmentação da barba ficou super natural. Recomendo demais!”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">T</span><div><strong>Thiago A.</strong><small>Cliente há 2 anos</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="agendar">
+      <div class="cta-lines" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <span class="section-tag reveal">Sua cadeira está esperando</span>
+        <h2 class="cta-title reveal">Seu melhor visual está<br>a <span class="gold-text">um clique</span> de distância.</h2>
+        <p class="reveal">Escolha o horário, chame no WhatsApp e deixe o resto com a gente.</p>
+        <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20MD%20Barbearia." class="btn btn-gold btn-lg reveal" target="_blank" rel="noopener" aria-label="Agendar meu horário pelo WhatsApp">Agendar meu horário</a>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section location" id="localizacao">
+      <div class="container location-grid">
+        <div class="location-info">
+          <span class="section-tag reveal">Localização</span>
+          <h2 class="section-title reveal">Venha nos <span class="gold-text">visitar</span></h2>
+          <ul class="info-list">
+            <li class="reveal stagger">
+              <span class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-7.6 7-13a7 7 0 1 0-14 0c0 5.4 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div><strong>Endereço</strong><p>Rua das Três Marias, 207<br>Parque Novo Santo Amaro, São Paulo - SP<br>CEP 05874-180</p></div>
+            </li>
+            <li class="reveal stagger">
+              <span class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><strong>Horário</strong><p>Segunda a Sábado · 10h às 20h<br>Domingo · 10h às 14h</p></div>
+            </li>
+            <li class="reveal stagger">
+              <span class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+              <div><strong>WhatsApp</strong><p><a href="https://wa.me/5511958634523" target="_blank" rel="noopener">(11) 95863-4523</a></p></div>
+            </li>
+          </ul>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+das+Tr%C3%AAs+Marias,+207,+Parque+Novo+Santo+Amaro,+S%C3%A3o+Paulo+SP" class="btn btn-gold reveal" target="_blank" rel="noopener" aria-label="Como chegar pelo Google Maps">Como chegar</a>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe title="Mapa da MD Barbearia - Rua das Três Marias, 207, São Paulo" src="https://maps.google.com/maps?q=Rua%20das%20Tr%C3%AAs%20Marias%2C%20207%2C%20Parque%20Novo%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20SP&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo" aria-label="MD Barbearia - voltar ao início">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+          <span>MD <em>Barbearia</em></span>
+        </a>
+        <p class="footer-about">Barbearia premium no Parque Novo Santo Amaro. Estilo, precisão e cuidado em cada detalhe.</p>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <p>Rua das Três Marias, 207<br>Parque Novo Santo Amaro<br>São Paulo - SP, 05874-180</p>
+      </div>
+      <div>
+        <h4>Horários</h4>
+        <p>Seg a Sáb · 10h às 20h<br>Domingo · 10h às 14h</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p><a href="https://wa.me/5511958634523" target="_blank" rel="noopener">WhatsApp (11) 95863-4523</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> MD Barbearia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511958634523?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20MD%20Barbearia." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar com a MD Barbearia no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+  </a>
+
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da foto" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Fechar foto">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Foto anterior">‹</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Próxima foto">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
